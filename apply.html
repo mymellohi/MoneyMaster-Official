@@ -1,57 +1,68 @@
-<!DOCTYPE html>
-<html>
-    <head>
-         <meta charset="UTF-8">
-    <title>Apply - Money Master</title>
-    <link rel="stylesheet" href="styles.css">
-     <style>
-        #site-header {
-            margin: 0;
-            padding: 0;
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="MoneyMaster - A financial technology company developing secure and user-friendly platforms for digital payments, budgeting tools, account management and financial education.">
+    <meta name="keywords"
+        content="MoneyMaster, financial technology, digital payments, budgeting, account management, financial education">
+    <meta name="author" content="MoneyMaster Executive Team">
+    <title>MoneyMaster</title>
+    <style>
+        .logo {
+            width: 260px;
+            height: auto;
         }
     </style>
+    <!--<img src="logo.png" class="logo"> -->
+</head>
 
-    </head>
-
-    <body>
-         <header id="site_header">
-      
+<body>
+    <header>
         <nav>
-            <img src="logo.png" class= "logo" alt="logo" id="site-header" width="200">
+            <a href="index"><img src="images/logo.png" class="logo" alt="logo"></a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="job.html">Jobs</a></li>
-                <li><a href="apply.html">Apply</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="apply.html">Apply</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
+            <div class="btns">
+                <button class="btn">Login</button>
+            </div>
         </nav>
     </header>
 
     <main>
         <br>
-         <h1>Job Application Form</h1>
-        <p id="form-intro" style="font-style: italic; color: #4a7a5a;">Master your money. Apply below to join our team.</p>
+        <h1>Job Application Form</h1>
+        <p id="form-intro" style="font-style: italic; color: #4a7a5a;">Master your money. Apply below to join our team.
+        </p>
 
-           <section>
+        <section>
             <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="POST">
- 
+
                 <h2>Job Details</h2>
- 
+
                 <p>
                     <label for="jobref">Job reference number (6 alphanumeric characters):</label><br>
-                    <input type="text" id="jobref" name="jobref" pattern="[A-Za-z0-9]{6}" maxlength="6" minlength="6" required>
+                    <input type="text" id="jobref" name="jobref" pattern="[A-Za-z0-9]{6}" maxlength="6" minlength="6"
+                        required>
                 </p>
-  <h2>Personal Details</h2>
- 
+                <h2>Personal Details</h2>
+
                 <p>
                     <label for="firstname">First name (max 20 letters):</label><br>
                     <input type="text" id="firstname" name="firstname" pattern="[A-Za-z]{1,20}" maxlength="20" required>
                 </p>
-                 <p>
+                <p>
                     <label for="lastname">Last name (max 20 letters):</label><br>
                     <input type="text" id="lastname" name="lastname" pattern="[A-Za-z]{1,20}" maxlength="20" required>
                 </p>
-                 <p>
+                <p>
                     <label for="dob">Date of birth (dd/mm/yyyy):</label><br>
                     <input type="date" id="dob" name="dob" required>
                 </p>
@@ -59,9 +70,9 @@
                     <legend>Gender</legend>
                     <p>
                         <input type="radio" id="genderfemale" name="gender" value="female" required>
-                        <label for="genderfemale">Female</label>    
+                        <label for="genderfemale">Female</label>
                     </p>
-                     <p>
+                    <p>
                         <input type="radio" id="gendermale" name="gender" value="male" required>
                         <label for="gendermale">Male</label>
                     </p>
@@ -69,12 +80,12 @@
                         <input type="radio" id="genderother" name="gender" value="other" required>
                         <label for="genderother">Other</label>
                     </p>
-                    
 
-                     </fieldset>
- 
+
+                </fieldset>
+
                 <h2>Contact Details</h2>
- 
+
                 <p>
                     <label for="address">Street address (max 40 characters):</label><br>
                     <input type="text" id="address" name="address" maxlength="40" required>
@@ -101,65 +112,76 @@
 
                 <p>
                     <label for="postcode">Postcode (4 digits):</label><br>
-                    <input type="text" id="postcode" name="postcode" pattern="[0-9]{4}" maxlength="4" minlength="4"  required>
+                    <input type="text" id="postcode" name="postcode" pattern="[0-9]{4}" maxlength="4" minlength="4"
+                        required>
                 </p>
- 
+
                 <p>
                     <label for="email">Email address:</label><br>
                     <input type="email" id="email" name="email" required>
                 </p>
-                 <p>
+                <p>
                     <label for="phone">Phone number (8-12 digits):</label><br>
-                    <input type="text" id="phone" name="phone" pattern="[0-9]{8,12}" maxlength="12" inputmode="numeric" required>
+                    <input type="text" id="phone" name="phone" pattern="[0-9]{8,12}" maxlength="12" inputmode="numeric"
+                        required>
                 </p>
 
                 <h2>Skills</h2>
- 
+
                 <fieldset>
                     <legend>Skill list</legend>
                     <p>
-                        <input type="checkbox" id="skillbudgeting" name="skills" value="budgeting-tools" >
+                        <input type="checkbox" id="skillbudgeting" name="skills" value="budgeting-tools">
                         <label for="skillbudgeting">Budgeting tools development</label>
                     </p>
                     <p>
-                        <input type="checkbox" id="skillpayments" name="skills" value="digital-payments" >
+                        <input type="checkbox" id="skillpayments" name="skills" value="digital-payments">
                         <label for="skillpayments">Digital payments systems</label>
                     </p>
                     <p>
-                        <input type="checkbox" id="skillsecurity" name="skills" value="financial-security" >
+                        <input type="checkbox" id="skillsecurity" name="skills" value="financial-security">
                         <label for="skillsecurity">Financial data security</label>
                     </p>
                     <p>
-                        <input type="checkbox" id="skillanalysis" name="skills" value="financial-analysis" >
+                        <input type="checkbox" id="skillanalysis" name="skills" value="financial-analysis">
                         <label for="skillanalysis">Financial analysis</label>
                     </p>
                     <p>
-                        <input type="checkbox" id="skillcustomer" name="skills" value="customer-service" >
+                        <input type="checkbox" id="skillcustomer" name="skills" value="customer-service">
                         <label for="skillcustomer">Customer service</label>
                     </p>
                     <p>
-                        <input type="checkbox" id="skillcoding" name="skills" value="software-development" >
+                        <input type="checkbox" id="skillcoding" name="skills" value="software-development">
                         <label for="skillcoding">Software development</label>
                     </p>
-                     </fieldset>
- 
+                </fieldset>
+
                 <p>
                     <label for="otherskills">Other skills:</label><br>
                     <textarea id="otherskills" name="otherskills" rows="5" cols="40"></textarea>
                 </p>
- 
+
                 <p>
                     <button type="submit">Submit Application</button>
                     <button type="reset">Clear Form</button>
                 </p>
- 
+
             </form>
-             </section>
+        </section>
     </main>
- 
+
     <footer>
-        <p>&copy; 2026 Moneymaster. All rights reserved.</p>
+        <p>We acknowledge the Traditional Custodians of the land on which we work and live, and pay our respects to
+            Elders past and present. We aim to consistently abide by practices that uphold values aligning with the Five
+            Rights framework, applying the principles of Right People, Right Time, Right Place, Right Language, and
+            Right Purpose.</p>
+
+        <a href=">Jira</a> 
+            <a href=" https://github.com/aqsae/MoneyMaster-Official.git">Github</a>
+        <a href="gmail.com">Email</a>
+        <p>&copy; 2024 MoneyMaster. All rights reserved.</p>
     </footer>
- 
-    </body>
+
+</body>
+
 </html>
